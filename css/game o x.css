@@ -1,0 +1,118 @@
+.box{
+
+    background: rgb(175, 111, 239);
+    color: aliceblue;
+}
+.container{
+    display: grid;
+    grid-auto-rows: minmax(100px , auto) ;
+    grid-template-areas: 
+  '  he   he   he   he   he '
+  '   l    ga    ga   ga  r  '
+  '   l    ga    ga   ga   r '
+  '   l    ga    ga   ga   r '
+  '  l     ga    ga   ga   r '
+  '   fo   fo   fo  fo  fo       '
+    
+    
+    ;
+grid-gap: 10px;
+text-align: center;
+
+
+
+}
+
+
+
+.head1{
+    grid-area: he;
+}
+.game{
+    grid-area: ga;
+}
+.footer{
+
+    grid-area: fo;
+}
+.slidr{
+    grid-area: r;
+}
+.slidl{
+    grid-area: l;
+}
+
+#game1{
+    background: rgb(253, 251, 251);
+   
+    text-align: center;
+    
+    
+    
+}
+#game1{
+    width:270px;
+    text-align: center;
+    margin: auto;
+ 
+}
+
+
+.square{
+    width: 85px;
+    height:85px;
+    background: rgb(240, 73, 73) ;
+    float: left;
+    margin:2px;
+    font-size: 50px;   
+}
+.square:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.head1{
+    padding: 40px 10px ;
+    font-size: 50px;
+    background-color: rgb(167, 246, 8);
+    box-shadow: 5px 5px 9px rgb(0, 0, 0);
+    color: rgb(226, 43, 43);
+    margin:20px 15px 50px 15px ;
+    border-radius: 50px;
+   
+   
+}
+.slidl{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 20px;
+    background: rgb(0, 0, 0);
+    height: 50px;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+.slidr{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 20px;
+    background: rgb(11, 11, 11);
+    height: 50px;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-right: 20px;
+}
+.footer{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 20px;
+    margin: 0px 20px;
+    background: rgb(56, 5, 5);
+    height: 50px;
+    font-size: 30px;
+}
+
+.slidr::after{
+    content: ' : دور ''';
+}
+
+
